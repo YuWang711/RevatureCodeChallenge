@@ -1,0 +1,21 @@
+class JuneTwentieth {
+    public static void main(String[] args) {
+        int a = 17;
+        int b = 24;
+        int result = Square(a,b);
+        System.out.println(result);
+    }
+    
+    public static int Square(int a, int b){
+        int i = 1;
+        int count = 0;
+        while(b >= Math.pow(i,2)){
+            double power = Math.pow(i,2);
+            if(power >= a && power <= b){
+             count++;
+            }
+            i++;
+        }
+        return count;
+    }
+}
